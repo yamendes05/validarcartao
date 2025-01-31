@@ -26,4 +26,5 @@ Interface de Usuário: A interface contém um campo de entrada onde o número do
 
 # Tecnologias Utilizadas
 JavaScript: Para a manipulação de strings e identificação do tipo de cartão.
+
 HTML/CSS: Para a construção da interface de usuário.
