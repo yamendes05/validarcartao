@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="credit-card-icon">
+                    <rect width="20" height="14" x="2" y="5" rx="2"/>
+                    <line x1="2" x2="22" y1="10" y2="10"/>
+                </svg>
+                <h1>Validador de Cartão</h1>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">Número do Cartão</label>
+                <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="Digite o número do cartão"
+                    maxlength="19"
+                >
+            </div>
+
+            <div id="result" class="result unknown">
+                <p><span class="label">Bandeira detectada: </span><span id="cardType">Cartão não identificado</span></p>
+            </div>
+
+            <div class="rules">
+                <h2>Regras de validação:</h2>
+                <ul>
+                    <li>Visa: Começa com 4</li>
+                    <li>Mastercard: Começa com 51-55 ou 2221-2720</li>
+                    <li>Elo: Pode começar com 4011, 4312, 4389</li>
+                    <li>American Express: Começa com 34 ou 37</li>
+                    <li>Discover: Começa com 6011, 65 ou 644-649</li>
+                    <li>Hipercard: Geralmente começa com 6062</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="indesx.js"></script>
+</body>
+</html>
