@@ -48,7 +48,7 @@ function identifyCardType(cardNumber) {
 
 
 ## 📷 Imagem da Interface
-![Validador de Cartão](https://github.com/seu-usuario/seu-repositorio/blob/main/image.png)
+![Validador de Cartão]([https://github.com/seu-usuario/seu-repositorio/blob/main/image.png](https://github.com/yamendes05/validarcartao/blob/main/image.png))
 
 ## 📄 Licença
 Este projeto está licenciado sob a licença MIT. Para mais informações, consulte o arquivo LICENSE.
