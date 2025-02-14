@@ -26,10 +26,10 @@ A função principal do código é `identifyCardType`, que recebe um número de 
 
 
 #  Como Executar
-```
+`
 git clone https://github.com/seu-usuario/identificador-cartao.git  
 cd identificador-cartao  
-open index.html  ```
+open index.html  `
 
 
 ---
