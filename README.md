@@ -1,30 +1,39 @@
-## Identificador de Tipo de Cartão
+# Identificador de Tipo de Cartão
 
+![Identificação de Cartões](https://via.placeholder.com/800x400.png?text=Identificador+de+Cart%C3%A3o)
+
+## 📌 Sobre o Projeto
 Este projeto contém uma função que identifica o tipo de cartão de crédito com base no número informado. O código utiliza expressões regulares para identificar os tipos de cartões mais comuns, como Visa, Mastercard, Elo, American Express, Discover e Hipercard.
 
-## Funcionalidade
-A função principal do código é identifyCardType, que recebe um número de cartão como entrada e retorna o tipo de cartão correspondente. Além disso, a interface de usuário exibe o tipo de cartão em tempo real, à medida que o usuário digita.
+## ⚙️ Funcionalidade
+A função principal do código é `identifyCardType`, que recebe um número de cartão como entrada e retorna o tipo de cartão correspondente. Além disso, a interface de usuário exibe o tipo de cartão em tempo real, à medida que o usuário digita.
 
-# Como Funciona
-Limpeza do número do cartão: A função identifyCardType começa removendo todos os caracteres não numéricos (espaços e hífens) do número do cartão, utilizando a expressão regular replace(/[\s-]/g, '').
+## 🔍 Como Funciona
+1. **Limpeza do número do cartão**: Remove caracteres não numéricos (espaços e hífens) utilizando `replace(/[\s-]/g, '')`.
+2. **Identificação do Tipo de Cartão**:
+   - **Visa**: Começa com `4`.
+   - **Mastercard**: Começa com `51-55` ou `2221-2720`.
+   - **Elo**: Pode começar com `4011`, `4312`, `4389`.
+   - **American Express (AMEX)**: Começa com `34` ou `37`.
+   - **Discover**: Começa com `6011`, `65`, ou `644-649`.
+   - **Hipercard**: Geralmente começa com `6062`.
+3. **Interface de Usuário**: Ao digitar o número do cartão, a bandeira é identificada e exibida abaixo do campo de entrada.
 
-# Identificação do Tipo de Cartão:
+## 💻 Tecnologias Utilizadas
+- **JavaScript**: Manipulação de strings e identificação do tipo de cartão.
+- **HTML/CSS**: Construção da interface de usuário.
 
-Visa: Cartões que começam com o número "4" são identificados como Visa.
+## 🚀 Como Executar
+```bash
+git clone https://github.com/seu-usuario/identificador-cartao.git
+cd identificador-cartao
+open index.html
 
-Mastercard: Cartões que começam com os números "5" (1-5), "2221-2720" são identificados como Mastercard.
+##📜 Código Principal
+ ![image](https://github.com/user-attachments/assets/6e80d13e-6c76-49f7-b7dc-1f24a562d0a2)
 
-Elo: Cartões que começam com os números "4011", "4312" ou "4389" são identificados como Elo.
 
-American Express (AMEX): Cartões que começam com "34" ou "37" são identificados como American Express.
+## 📷 Imagem da Interface
 
-Discover: Cartões que começam com "6011", "65", "644-649" são identificados como Discover.
-
-Hipercard: Cartões que começam com "6062" são identificados como Hipercard.
-
-Interface de Usuário: A interface contém um campo de entrada onde o número do cartão é digitado. À medida que o usuário digita, o tipo de cartão é identificado e exibido abaixo do campo de entrada. Se o tipo for desconhecido, uma mensagem é exibida.
-
-# Tecnologias Utilizadas
-JavaScript: Para a manipulação de strings e identificação do tipo de cartão.
-
-HTML/CSS: Para a construção da interface de usuário.
+##📄 Licença
+Este projeto está licenciado sob a licença MIT. Para mais informações, consulte o arquivo LICENSE
