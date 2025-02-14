@@ -23,9 +23,9 @@ A função principal do código é `identifyCardType`, que recebe um número de 
 - **JavaScript**: Manipulação de strings e identificação do tipo de cartão.
 - **HTML/CSS**: Construção da interface de usuário.
 
-# Identificador de Cartão
 
-# Como Executar
+
+#  Como Executar
 
 git clone https://github.com/seu-usuario/identificador-cartao.git  
 cd identificador-cartao  
@@ -33,7 +33,7 @@ open index.html
 
 ---
 
-## Código Principal
+## 💻 Código Principal
 
 function identifyCardType(cardNumber) {
     const cleanNumber = cardNumber.replace(/[ \s-]/g, '');
@@ -45,3 +45,11 @@ function identifyCardType(cardNumber) {
     if (/^6062/.test(cleanNumber)) return 'hipercard';
     return 'unknown';
 }
+
+
+## 📷 Imagem da Interface
+
+
+## 📄 Licença
+Este projeto está licenciado sob a licença MIT. Para mais informações, consulte o arquivo LICENSE.
+
