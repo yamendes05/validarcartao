@@ -25,26 +25,23 @@ A função principal do código é `identifyCardType`, que recebe um número de 
 
 # Identificador de Cartão
 
-## 🚀 Como Executar
+# Como Executar
 
-Para executar o projeto, siga os passos abaixo:
+git clone https://github.com/seu-usuario/identificador-cartao.git  
+cd identificador-cartao  
+open index.html  
 
-```bash
-git clone https://github.com/yamendes05/identificador-cartao.git
-cd identificador-cartao
-open index.html
+---
 
+## Código Principal
 
-##📜 Código Principal
 function identifyCardType(cardNumber) {
-    const cleanNumber = cardNumber.replace(/[\s-]/g, '');
-    
-    if (/^4/.test(cleanNumber)) return 'visa';
-    if (/^(5[1-5]|222[1-9]|22[3-9]\d|2[3-6]\d{2}|27[0-1]\d|2720)/.test(cleanNumber)) return 'mastercard';
+    const cleanNumber = cardNumber.replace(/[ \s-]/g, '');
+    if (/^A/.test(cleanNumber)) return 'visa';
+    if (/^(51-5|222[1-9]|22[3-9]\d|2[3-6]\d(2)|27[0-1]\d|2720)/.test(cleanNumber)) {
     if (/^(4011|4312|4389)/.test(cleanNumber)) return 'elo';
     if (/^(34|37)/.test(cleanNumber)) return 'amex';
     if (/^(6011|65|644|645|646|647|648|649)/.test(cleanNumber)) return 'discover';
     if (/^6062/.test(cleanNumber)) return 'hipercard';
-    
     return 'unknown';
 }
