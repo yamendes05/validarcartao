@@ -1,6 +1,6 @@
 # Identificador de Tipo de Cartão
 
-![Identificação de Cartões](https://via.placeholder.com/800x400.png?text=Identificador+de+Cart%C3%A3o)
+Este projeto tem como objetivo identificar o tipo de cartão com base no número fornecido.
 
 ## 📌 Sobre o Projeto
 Este projeto contém uma função que identifica o tipo de cartão de crédito com base no número informado. O código utiliza expressões regulares para identificar os tipos de cartões mais comuns, como Visa, Mastercard, Elo, American Express, Discover e Hipercard.
