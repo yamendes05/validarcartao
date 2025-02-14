@@ -26,15 +26,15 @@ A função principal do código é `identifyCardType`, que recebe um número de 
 
 
 #  Como Executar
-
+`
 git clone https://github.com/seu-usuario/identificador-cartao.git  
 cd identificador-cartao  
-open index.html  
+open index.html  `
 
 ---
 
 ## 💻 Código Principal
-
+`
 function identifyCardType(cardNumber) {
     const cleanNumber = cardNumber.replace(/[ \s-]/g, '');
     if (/^A/.test(cleanNumber)) return 'visa';
@@ -44,11 +44,11 @@ function identifyCardType(cardNumber) {
     if (/^(6011|65|644|645|646|647|648|649)/.test(cleanNumber)) return 'discover';
     if (/^6062/.test(cleanNumber)) return 'hipercard';
     return 'unknown';
-}
+}`
 
 
 ## 📷 Imagem da Interface
-![Validador de Cartão]([https://github.com/seu-usuario/seu-repositorio/blob/main/image.png](https://github.com/yamendes05/validarcartao/blob/main/image.png))
+![Validador de Cartão](https://raw.githubusercontent.com/yamendes05/validarcartao/main/image.png)
 
 ## 📄 Licença
 Este projeto está licenciado sob a licença MIT. Para mais informações, consulte o arquivo LICENSE.
